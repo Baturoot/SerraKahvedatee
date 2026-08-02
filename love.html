@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kahve Tarihi ❤️</title>
+
+
+<style>
+
+
+body{
+
+margin:0;
+height:100vh;
+background:#ffd6e5;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:"Comic Sans MS",cursive;
+overflow:hidden;
+
+}
+
+
+
+.container{
+
+text-align:center;
+
+}
+
+
+
+h1{
+
+color:#ff3366;
+font-size:40px;
+
+}
+
+
+
+.envelope{
+
+font-size:120px;
+cursor:pointer;
+animation:move 1s infinite alternate;
+
+}
+
+
+@keyframes move{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-15px);
+}
+
+}
+
+
+
+.letter{
+
+display:none;
+background:white;
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 20px pink;
+
+font-size:30px;
+color:#ff3366;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+Sana küçük bir sürpriz var 💕
+</h1>
+
+
+<div class="envelope" onclick="openLetter()">
+💌
+</div>
+
+
+<div class="letter" id="letter">
+
+O zaman kahve içeceğimiz tarih<br><br>
+
+<b>
+06/09/2026 ❤️
+</b>
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+function openLetter(){
+
+document.querySelector(".envelope").style.display="none";
+
+document.getElementById("letter").style.display="block";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
